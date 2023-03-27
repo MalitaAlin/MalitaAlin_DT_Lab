@@ -1,0 +1,72 @@
+ul {
+  list-style-type: none;
+}
+
+h1{
+  text-align: center;
+  padding: 10px;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+#modifyDiv{
+display:none;
+}
+
+.user-row {
+  margin: 20px auto;
+  background-color: rgb(255, 254, 234);
+  padding: 10px;
+  text-align: center;
+  width: 450px;
+}
+
+.user-row:hover {
+  background-color: rgb(255, 251, 175);
+}
+
+button.user-row.user-add{
+  width:200px;
+  text-align: center;
+  margin:auto ;
+}
+.user-add:hover{
+  background-color: rgb(190, 255, 175);
+}
+
+.user-name {
+  width: 150px;
+  display: inline-block;
+}
+
+.user-city {
+  width: 150px;
+  display: inline-block;
+}
+
+.user-delete, .user-modify{
+  width: 50px;
+  font-size:15px;
+  display: inline-block;
+}
+
+.user-delete:hover span{
+  display:none;
+}
+
+.user-delete:hover:before {
+  background-color: rgb(255, 200, 175);
+  content: "Delete?";
+  font-size:20px;
+}
+.user-modify:hover span{
+  display:none;
+}
+.user-modify:hover:before {
+  background-color: rgb(175, 255, 238);
+  content: "Modify?";
+  font-size:20px;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
+  <title>Users manager</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="libs/vue/vue.js"></script>
+  <script type="text/javascript" src="libs/axios/axios.js"></script>
+  <script type="text/javascript" src="users.js"></script>
+  
+</head>
+
+<body>
+  <div id="app">
+      <h1> User Aplication </h1>
+    <ul class="user-list">
+      <li v-for="(user, index) in users">
+        <div class="user-row">
+          <div class="user-name" ><b>{{ user.name }}</b></div>
+          <div class="user-city"><i>{{ user.city }}</i></div>
+          <button class="user-delete"  v-on:click= "deleted(index)" > <span>X</span></button>
+            
+        </div>
+      </li>
+   <li>
+      <div class="user-row">
+      <label class="user-row" for="newusername">Name:</label>
+      <input type="text" v-model="newusername"><br><br>
+      <label class="user-row" for="newusercity">City:</label>
+      <input type="text" v-model="newusercity"><br>
+      <button class="user-row user-add" v-on:click= "add(newusername,newusercity)" > + Add User? </button>
+       </div>
+     </li>
+     <li>
+      <div class="user-row">
+        
+      <button class="user-modify" v-on:click="modifyToggle" ><span>Modify</span></button>
+            <div id="modifyDiv"><br><br>
+
+              <select v-model="selectedUser">
+                <option v-for="(user, index) in users" :value="index">{{ user.name }}</option>
+              </select>
+              <br><br>
+          <label class="user-row" for="modusername">Name:</label>
+          <input type="text" v-model="modusername"><br><br>
+          <label class="user-row"for="modusercity">City:</label>
+          <input type="text" v-model="modusercity"><br>
+          <button class="user-add" v-on:click= "modify(selectedUser,modusername,modusercity)"  ><span>Submit</span></button>
+          <br><br>
+        </div>
+      </div>
+     </li>
+    </ul>
+
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
