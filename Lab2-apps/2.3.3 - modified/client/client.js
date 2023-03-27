@@ -29,10 +29,11 @@ function checkBrowser() {
 
 document.getElementById("send").addEventListener("click", sendMessage);
 function sendMessage() {
+    var name = document.getElementById("name").value;
     var message = document.getElementById("message").value;
     socket.emit("message-from-client", message);
     console.log("sent message: "+message);
-    appendMessageToChat("sent message: " + message);
+    appendMessageToChat(name+" sent message: " + message);
     document.getElementById("message").value = '';
 }
 

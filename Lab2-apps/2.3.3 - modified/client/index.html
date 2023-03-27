@@ -1,11 +1,14 @@
 <html>
+
 <head>
     <title>Chat client</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <div id="chat-window"></div>
-    <input type="text" id="message" placeholder="Write a message" /><button id="send">Send</button>
-
+    <input type="text" id="name" placeholder="Your Name" />
+    <input type="text" id="message" placeholder="Write a message" /><button id="send">Send ></button>
+    
     <script src="node_modules/socket.io-client/dist/socket.io.js"></script>
     <script src="client.js"></script>
     
