@@ -1,0 +1,56 @@
+/** Body **/
+
+body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    overflow-x:hidden;
+   scroll-behavior: smooth; 
+   background: #bdc3c7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #637f9a, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #546f89, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+  
+  .fade-in { animation: fadeIn 1.5s; } /*fadeIn is the animation name*/
+
+
+  @keyframes fadeIn {
+    0% { opacity: 0.2; }
+    100% { opacity: 1; }
+  }
+
+/** Login CSS**/
+
+.boxlogin{
+    background: hsla(0, 0%, 100%, 0.55);
+backdrop-filter: blur(40px);
+filter: drop-shadow(25px 25px 25px rgba(0, 0, 0, 0.682));
+}
+    
+.cascading-right {
+    margin-right: -50px;
+  }
+
+  @media (max-width: 991.98px) {
+    .cascading-right {
+      margin-right: 0;
+    }
+  }
+
+  
+/** Main CSS**/
+.card-user{
+  width:130px;
+  padding:0;
+  margin:0 10px;
+}
+.usernamebtn{
+  background:#ffffff;
+}
+
+.search-bar{
+  width:300px;
+  margin: 0 10% ;
+}

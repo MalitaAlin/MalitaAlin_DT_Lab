@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>TravelPlan</title>
+
+
+  <link rel="icon"  href="gallery/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap CSS v5.2.0-beta1 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/eaddf9665d.js" crossorigin="anonymous"></script>
+      <!-- Bootstrap JavaScript Libraries -->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body  class="fade-in">
+
+ <!-- <i class="fa-regular fa-bookmark"></i> 
+-->
+    <section class="fade-in main text-center text-lg-start">
+ 
+      <div class="h2 card-body p-5 shadow-5 text-center">
+        <i class="fa-solid fa-map-location-dot" style="color: #58a7e8;"></i> TravelPlan</div>
+      <!-- User menu-->
+      <div class="card-user py-4">  
+          <div class="dropdown nav  navbar-toggle show">
+          <a class="btn btn-light btn-outline-dark  dropdown-toggle " href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa-solid fa-user"></i> Username
+          </a>
+          <div class="  dropdown-menu " aria-labelledby="dropdownMenuLink">
+ 
+            <button class="dropdown-item nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true" >
+              Search <i class="fa-solid fa-magnifying-glass-location"></i></button>
+            <button class="dropdown-item nav-link" id="nav-user-tab" data-bs-toggle="tab" data-bs-target="#nav-user" type="button" role="tab" aria-controls="nav-user" aria-selected="false">
+              See Bookmarks <i class="fa-solid fa-bookmark"></i></button>
+          
+            <button class="dropdown-item" onclick="logout()">Log Out <i class="fa-solid fa-door-open"></i></button>
+          </div>
+        </div>
+      </div>
+        </div>
+
+
+        <div class="tab-content tab-section" id="nav-tabContent">
+<!--Tab content -->
+          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+            <section id="homesection" class="fade-in container-fluid">
+  <!-- Search engine menu-->
+  <div class="input-group search-bar" style=" width:300px;">
+    <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+    <button type="button" class="btn btn-dark btn-outline-primary" onclick="">search</button>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+    
+          <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
+          <div class="caption">
+            <h3>Eiffel Tower</h3>
+            <h4>Paris</h4>
+            <p></p>
+          </div>
+     
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+      
+          <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
+          <div class="caption">
+            <h3>Eiffel Tower</h3>
+            <h4>Paris</h4>
+            <p></p>
+          </div>
+       
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+ 
+          <img src="/w3images/fjords.jpg" alt="Fjords" style="width:100%">
+          <div class="caption">
+            <h3>Eiffel Tower</h3>
+            <h4>Paris</h4>
+            <p></p>
+          </div>
+      
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+    
+          <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
+          <div class="caption">
+            <h3>Eiffel Tower</h3>
+            <h4>Paris</h4>
+            <p></p>
+          </div>
+     
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+      
+          <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
+          <div class="caption">
+            <h3>Eiffel Tower</h3>
+            <h4>Paris</h4>
+            <p></p>
+          </div>
+       
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+ 
+          <img src="/w3images/fjords.jpg" alt="Fjords" style="width:100%">
+          <div class="caption">
+            <h3>Eiffel Tower</h3>
+            <h4>Paris</h4>
+            <p></p>
+          </div>
+      
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+    
+          <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
+          <div class="caption">
+            <h3>Eiffel Tower</h3>
+            <h4>Paris</h4>
+            <p></p>
+          </div>
+     
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+      
+          <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
+          <div class="caption">
+            <h3>Eiffel Tower</h3>
+            <h4>Paris</h4>
+            <p></p>
+          </div>
+       
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+ 
+          <img src="/w3images/fjords.jpg" alt="Fjords" style="width:100%">
+          <div class="caption">
+            <h3>Eiffel Tower</h3>
+            <h4>Paris</h4>
+            <p></p>
+          </div>
+      
+      </div>
+    </div>
+  </div>
+
+
+
+</section> 
+</div>
+
+<div class="tab-pane fade" id="nav-user" role="tabpanel" aria-labelledby="nav-user-tab">
+  <section id="usersection" class="fade-in container-fluid">
+
+    </i><div class="card card-dark">Username  <i class="fa-solid fa-user-pen"></i> <button class="btn btn-dark">Modify username</button></div>
+    <div class="card card-light">Bookmark gallery</div>
+  </section> 
+</div>
+<!-- Tab content close-->
+</div>
+
+
+     </section>
+
+
+     <section class="login text-center text-lg-start fade-in">
+                    <!-- Jumbotron -->
+                    <div class="container py-4">
+                      <div class="row g-0 align-items-center">
+                        <div class="col-lg-6 mb-5 mb-lg-0">
+                          <div class="card cascading-right boxlogin">
+                            <div class="h2 card-body p-5 shadow-5 text-center">
+                                <i class="fa-solid fa-map-location-dot" style="color: #58a7e8;"></i> TravelPlan</span>
+                              <h2 class="fw-bold mb-4">Bookmark your dream travel spots!</h2>
+                              <form>
+                                <!-- 2 column grid layout with text inputs for the first and last names -->
+                                <div class="row">
+                                  <div class="col-lg-8 mb-4">
+                                    <div class="form-outline">
+                                      <input type="text" id="form3Example1" class="form-control" placeholder="Username"/>
+                                    </div>
+                                  </div>
+                               
+                                </div>
+                                <!-- Email input <div class="form-outline col-lg-8 mb-4">
+                                  <input type="email" id="form3Example3" class="form-control" placeholder="Email"/>
+                                  
+                                </div> -->
+                                <!-- Password input -->
+                                <div class="form-outline col-lg-8 mb-4">
+                                  <input type="password" id="form3Example4" class="form-control" placeholder="Password"/>
+                                </div>
+                  
+                  
+                                <!-- Submit button -->
+                                <button type="button" class="btn btn-primary btn-block mb-4 col-lg-5"  onclick="return auth()">
+                                  Sign up
+                                </button> <i class="fa-solid fa-circle-dot" style="color: #58a7e8;"></i>
+                                <button type="button" class="btn btn-primary btn-block mb-4 col-lg-5" onclick="return auth()">
+                                    Login
+                                  </button>
+                  
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                  
+                        <div class="col-lg-6 mb-5 mb-lg-0">
+                          <img src="gallery/loginImage.jpg" class="w-60 rounded-4 shadow-4"
+                            alt="LoginImage"/>
+                        </div>
+                      </div>
+                    </div>
+     </section>
+
+     <script src="code.js" charset="utf-8"></script>
+</body>
